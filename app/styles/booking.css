@@ -1,0 +1,51 @@
+.booking {
+  position: relative;
+  padding: 180px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.booking-photo {
+  position: absolute;
+  inset: 0;
+}
+
+.booking-scrim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    80% 100% at 50% 30%,
+    rgba(5, 5, 5, 0.35),
+    rgba(5, 5, 5, 0.92) 78%
+  );
+}
+
+.booking-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.booking h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(40px, 6.4vw, 84px);
+  line-height: 0.98;
+  margin-bottom: 20px;
+  white-space: pre-line;
+}
+
+.booking p {
+  color: var(--chrome);
+  font-size: 16px;
+  margin-bottom: 44px;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
