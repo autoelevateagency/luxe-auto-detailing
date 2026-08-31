@@ -6,14 +6,12 @@ type LogoProps = {
 export const Logo = ({ ariaLabel, className = "" }: LogoProps) => {
   return (
     <a href="#top" className={`logo ${className}`.trim()} aria-label={ariaLabel}>
-      <span className="logo-frame">
-        <img
-          src="/assets/logo/luxe-logo.png"
-          alt=""
-          className="logo-img"
-          decoding="async"
-        />
-      </span>
+      <img
+        src="/assets/logo/luxe-logo.png"
+        alt=""
+        className="logo-img"
+        decoding="async"
+      />
     </a>
   );
 };

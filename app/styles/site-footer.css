@@ -14,21 +14,12 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-brand .logo-frame {
-  display: block;
-  height: 64px;
-  max-width: 320px;
-  overflow: hidden;
-}
-
 .footer-brand .logo-img {
   display: block;
   width: auto;
   height: 64px;
-  max-width: none;
+  max-width: 320px;
   object-fit: contain;
-  transform: scale(2.05);
-  transform-origin: center center;
 }
 
 .footer-brand p {

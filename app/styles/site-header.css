@@ -31,21 +31,12 @@ header.scrolled {
   line-height: 0;
 }
 
-.logo-frame {
-  display: block;
-  height: 84px;
-  max-width: min(420px, calc(100vw - 72px));
-  overflow: hidden;
-}
-
 header .logo-img {
   display: block;
-  height: 84px;
   width: auto;
-  max-width: none;
+  height: 84px;
+  max-width: min(420px, calc(100vw - 72px));
   object-fit: contain;
-  transform: scale(2.15);
-  transform-origin: center center;
 }
 
 .nav-links {
@@ -147,11 +138,8 @@ header .logo-img {
   }
 
   header .logo-img {
-    transform: scale(2.05);
-  }
-
-  .logo-frame {
     max-width: calc(100vw - 72px);
+    height: 60px;
   }
 
   .nav-links {
