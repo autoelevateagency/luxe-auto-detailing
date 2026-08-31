@@ -25,21 +25,36 @@ export const Contact = () => {
           <div className="info-list">
             <div className="info-row">
               <span className="label">{contact.hours}</span>
-              <span className="value placeholder">{contact.placeholderHours}</span>
+              <span className="value">
+                {common.hoursWeekday}
+                <br />
+                {common.hoursSaturday}
+                <br />
+                {common.hoursSunday}
+              </span>
             </div>
             <div className="info-row">
               <span className="label">{contact.email}</span>
-              <span className="value placeholder">{contact.placeholderEmail}</span>
+              <a href={`mailto:${common.email}`} className="value contact-link">
+                {common.email}
+              </a>
             </div>
             <div className="info-row">
               <span className="label">{contact.address}</span>
-              <span className="value placeholder">{contact.placeholderAddress}</span>
+              <a
+                href={common.mapsUrl}
+                className="value contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {common.addressLine1}
+                <br />
+                {common.addressLine2}
+              </a>
             </div>
             <div className="info-row">
               <span className="label">{contact.serviceArea}</span>
-              <span className="value placeholder">
-                {contact.placeholderServiceArea}
-              </span>
+              <span className="value">{common.serviceArea}</span>
             </div>
           </div>
         </Reveal>

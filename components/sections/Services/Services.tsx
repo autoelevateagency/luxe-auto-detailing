@@ -4,6 +4,7 @@ import { PhotoPanel } from "@/components/ui/PhotoPanel";
 import { Reveal } from "@/components/ui/Reveal";
 import { Wrap } from "@/components/ui/Wrap";
 import { useLanguage } from "@/context/LanguageContext";
+import { GALLERY_IMAGES } from "@/data/gallery-images";
 
 export const Services = () => {
   const { dictionary } = useLanguage();
@@ -34,7 +35,8 @@ export const Services = () => {
               </a>
             </div>
             <PhotoPanel
-              replaceLabel={services.service1.photoReplace}
+              src={GALLERY_IMAGES.serviceInterior}
+              alt={services.service1.photoAlt}
               className="service-photo"
             />
           </div>
@@ -43,7 +45,8 @@ export const Services = () => {
         <Reveal>
           <div className="service-row">
             <PhotoPanel
-              replaceLabel={services.service2.photoReplace}
+              src={GALLERY_IMAGES.serviceMobile}
+              alt={services.service2.photoAlt}
               className="service-photo"
             />
             <div className="service-copy">

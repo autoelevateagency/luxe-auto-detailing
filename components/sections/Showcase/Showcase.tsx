@@ -4,6 +4,7 @@ import { PhotoPanel } from "@/components/ui/PhotoPanel";
 import { Reveal } from "@/components/ui/Reveal";
 import { Wrap } from "@/components/ui/Wrap";
 import { useLanguage } from "@/context/LanguageContext";
+import { GALLERY_IMAGES } from "@/data/gallery-images";
 
 export const Showcase = () => {
   const { dictionary } = useLanguage();
@@ -25,26 +26,39 @@ export const Showcase = () => {
 
         <Reveal>
           <div className="showcase-grid">
-            <PhotoPanel replaceLabel={items.exterior.photoReplace} className="g1">
+            <PhotoPanel
+              src={GALLERY_IMAGES.showcaseExterior}
+              alt={items.exterior.photoAlt}
+              className="g1"
+            >
               <div className="showcase-caption">
                 <span>{items.exterior.tag}</span>
                 {items.exterior.title}
               </div>
             </PhotoPanel>
-            <PhotoPanel replaceLabel={items.interior.photoReplace} className="g2">
+            <PhotoPanel
+              src={GALLERY_IMAGES.showcaseInterior}
+              alt={items.interior.photoAlt}
+              className="g2"
+            >
               <div className="showcase-caption">
                 <span>{items.interior.tag}</span>
                 {items.interior.title}
               </div>
             </PhotoPanel>
-            <PhotoPanel replaceLabel={items.wheels.photoReplace} className="g3">
+            <PhotoPanel
+              src={GALLERY_IMAGES.showcaseDetail}
+              alt={items.wheels.photoAlt}
+              className="g3"
+            >
               <div className="showcase-caption">
                 <span>{items.wheels.tag}</span>
                 {items.wheels.title}
               </div>
             </PhotoPanel>
             <PhotoPanel
-              replaceLabel={items.protection.photoReplace}
+              src={GALLERY_IMAGES.showcaseFinish}
+              alt={items.protection.photoAlt}
               className="g4"
             >
               <div className="showcase-caption">

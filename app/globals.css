@@ -167,53 +167,20 @@ svg {
   color: var(--purple);
 }
 
-/* Placeholder photography panels */
+/* Photography panels */
 .photo {
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(
-      120% 140% at 82% 8%,
-      rgba(124, 44, 255, 0.24),
-      transparent 42%
-    ),
-    radial-gradient(
-      90% 120% at 15% 100%,
-      rgba(75, 22, 143, 0.28),
-      transparent 55%
-    ),
-    linear-gradient(160deg, #16161a 0%, #0a0a0c 55%, #050505 100%);
+  background: #0a0a0c;
 }
 
-.photo::before {
-  content: "";
+.photo-img {
   position: absolute;
   inset: 0;
-  background-image: repeating-linear-gradient(
-    115deg,
-    rgba(255, 255, 255, 0.05) 0px,
-    rgba(255, 255, 255, 0.05) 1px,
-    transparent 1px,
-    transparent 90px
-  );
-  mix-blend-mode: overlay;
-  opacity: 0.5;
-}
-
-.photo::after {
-  content: attr(data-replace);
-  position: absolute;
-  left: 20px;
-  bottom: 16px;
-  font-family: var(--body);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(245, 245, 245, 0.35);
-  border: 1px solid rgba(245, 245, 245, 0.18);
-  padding: 6px 10px;
-  background: rgba(5, 5, 5, 0.35);
-  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Section label system */

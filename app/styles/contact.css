@@ -76,9 +76,15 @@
   color: var(--chrome);
 }
 
-.info-row .value.placeholder {
-  color: rgba(150, 152, 159, 0.6);
-  font-style: italic;
+.contact-link {
+  transition:
+    color 0.35s var(--ease),
+    border-color 0.35s var(--ease);
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: var(--purple);
 }
 
 @media (max-width: 900px) {

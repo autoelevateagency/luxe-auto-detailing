@@ -1,5 +1,6 @@
 "use client";
 
+import { Logo } from "@/components/ui/Logo";
 import { Wrap } from "@/components/ui/Wrap";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -12,9 +13,7 @@ export const SiteFooter = () => {
       <Wrap>
         <div className="footer-grid">
           <div className="footer-brand">
-            <a href="#top" className="logo">
-              LUX<em>E</em>
-            </a>
+            <Logo ariaLabel={nav.logoAriaLabel} />
             <p>{footer.description}</p>
           </div>
           <div className="footer-col">
@@ -49,7 +48,7 @@ export const SiteFooter = () => {
                 <a href={`tel:${common.phone}`}>{common.phoneDisplay}</a>
               </li>
               <li>
-                <span className="placeholder">{footer.placeholderEmail}</span>
+                <a href={`mailto:${common.email}`}>{common.email}</a>
               </li>
               <li>
                 {common.ownerName}, {common.ownerRole.split(",")[0]}

@@ -6,9 +6,17 @@ export type Dictionary = {
   common: {
     phone: string;
     phoneDisplay: string;
+    email: string;
     ownerName: string;
     ownerRole: string;
     companyName: string;
+    hoursWeekday: string;
+    hoursSaturday: string;
+    hoursSunday: string;
+    addressLine1: string;
+    addressLine2: string;
+    mapsUrl: string;
+    serviceArea: string;
   };
   nav: {
     logoAriaLabel: string;
@@ -32,7 +40,7 @@ export type Dictionary = {
     availableLabel: string;
     availableValue: string;
     callLabel: string;
-    photoReplace: string;
+    photoAlt: string;
   };
   services: {
     eyebrow: string;
@@ -44,7 +52,7 @@ export type Dictionary = {
       title: string;
       description: string;
       cta: string;
-      photoReplace: string;
+      photoAlt: string;
     };
     service2: {
       num: string;
@@ -52,7 +60,7 @@ export type Dictionary = {
       title: string;
       description: string;
       cta: string;
-      photoReplace: string;
+      photoAlt: string;
     };
   };
   showcase: {
@@ -60,10 +68,10 @@ export type Dictionary = {
     title: string;
     description: string;
     items: {
-      exterior: { tag: string; title: string; photoReplace: string };
-      interior: { tag: string; title: string; photoReplace: string };
-      wheels: { tag: string; title: string; photoReplace: string };
-      protection: { tag: string; title: string; photoReplace: string };
+      exterior: { tag: string; title: string; photoAlt: string };
+      interior: { tag: string; title: string; photoAlt: string };
+      wheels: { tag: string; title: string; photoAlt: string };
+      protection: { tag: string; title: string; photoAlt: string };
     };
   };
   testimonial: {
@@ -75,7 +83,7 @@ export type Dictionary = {
     title: string;
     paragraph1: string;
     paragraph2: string;
-    photoReplace: string;
+    photoAlt: string;
   };
   contact: {
     eyebrow: string;
@@ -85,17 +93,13 @@ export type Dictionary = {
     email: string;
     address: string;
     serviceArea: string;
-    placeholderHours: string;
-    placeholderEmail: string;
-    placeholderAddress: string;
-    placeholderServiceArea: string;
   };
   booking: {
     title: string;
     description: string;
     bookDetail: string;
     callCta: string;
-    photoReplace: string;
+    photoAlt: string;
   };
   footer: {
     description: string;
@@ -104,7 +108,6 @@ export type Dictionary = {
     serviceMobile: string;
     studioHeading: string;
     contactHeading: string;
-    placeholderEmail: string;
     copyright: string;
     tagline: string;
   };

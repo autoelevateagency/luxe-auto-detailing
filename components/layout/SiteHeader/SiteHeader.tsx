@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { Logo } from "@/components/ui/Logo";
 import { Wrap } from "@/components/ui/Wrap";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -41,10 +42,7 @@ export const SiteHeader = () => {
   return (
     <header id="siteHeader" ref={headerRef}>
       <Wrap className="nav">
-        <a href="#top" className="logo" aria-label={nav.logoAriaLabel}>
-          LUX<em>E</em>
-          <small>{nav.logoSub}</small>
-        </a>
+        <Logo ariaLabel={nav.logoAriaLabel} />
         <nav
           className={`nav-links${menuOpen ? " open" : ""}`}
           id="navLinks"

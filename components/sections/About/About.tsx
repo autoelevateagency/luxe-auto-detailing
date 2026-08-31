@@ -4,6 +4,7 @@ import { PhotoPanel } from "@/components/ui/PhotoPanel";
 import { Reveal } from "@/components/ui/Reveal";
 import { Wrap } from "@/components/ui/Wrap";
 import { useLanguage } from "@/context/LanguageContext";
+import { GALLERY_IMAGES } from "@/data/gallery-images";
 
 export const About = () => {
   const { dictionary } = useLanguage();
@@ -14,7 +15,8 @@ export const About = () => {
       <Wrap className="about-grid">
         <Reveal>
           <PhotoPanel
-            replaceLabel={about.photoReplace}
+            src={GALLERY_IMAGES.about}
+            alt={about.photoAlt}
             className="about-photo"
           />
         </Reveal>

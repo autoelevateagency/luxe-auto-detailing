@@ -4,14 +4,24 @@ export const en: Dictionary = {
   meta: {
     title: "Luxe Auto Detailings — Interior / Exterior Detail, Mobile & Dropoff",
     description:
-      "Luxe Auto Detailings. Interior and exterior detailing, mobile or dropoff. Owned and operated by Christian Sommer.",
+      "Luxe Auto Detailings in Northwest Ohio. Professional interior and exterior auto detailing, mobile service or studio dropoff. Call 419-206-8477.",
   },
   common: {
     phone: "4192068477",
     phoneDisplay: "419-206-8477",
+    email: "info@luxautodetailings.com",
     ownerName: "Christian Sommer",
     ownerRole: "Owner / President, Luxe Auto Detailings",
     companyName: "Luxe Auto Detailings",
+    hoursWeekday: "Mon–Fri: 8:00 AM – 6:00 PM",
+    hoursSaturday: "Sat: 9:00 AM – 4:00 PM",
+    hoursSunday: "Sun: By Appointment Only",
+    addressLine1: "101 Front Street",
+    addressLine2: "Perrysburg, OH 43551",
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=101+Front+Street+Perrysburg+OH+43551",
+    serviceArea:
+      "Northwest Ohio — Toledo, Bowling Green, Perrysburg, Sylvania, Maumee, Findlay & surrounding areas within 40 miles",
   },
   nav: {
     logoAriaLabel: "Luxe Auto Detailings home",
@@ -36,7 +46,7 @@ export const en: Dictionary = {
     availableLabel: "Available",
     availableValue: "Mobile & Dropoff",
     callLabel: "Call",
-    photoReplace: "Hero — black vehicle, low studio light",
+    photoAlt: "Hero — black vehicle, low studio light",
   },
   services: {
     eyebrow: "What We Do",
@@ -50,7 +60,7 @@ export const en: Dictionary = {
       description:
         "A complete detail, inside and out — leather, carpet, and glass brought back to their best, paintwork cleaned, corrected, and protected, all finished by hand.",
       cta: "Book This Service",
-      photoReplace: "Interior — leather seat detail",
+      photoAlt: "GMC truck interior with detailed leather seats",
     },
     service2: {
       num: "02",
@@ -59,41 +69,41 @@ export const en: Dictionary = {
       description:
         "Have the studio come to you, or bring your vehicle in — either way, it's the same process, the same attention, and the same result.",
       cta: "Ask About Scheduling",
-      photoReplace: "Mobile setup at customer location",
+      photoAlt: "Mobile detailing at a customer's home",
     },
   },
   showcase: {
     eyebrow: "The Work",
     title: "Judge it by\nthe finish.",
     description:
-      "A look at the studio's process — replace these placeholders with real detailing photography from your own work.",
+      "Real results from the studio — interior, exterior, and every detail in between.",
     items: {
       exterior: {
         tag: "Exterior",
         title: "Paint & Body",
-        photoReplace: "Exterior — paint reflection, full body",
+        photoAlt: "Silver Jeep Grand Cherokee exterior wash",
       },
       interior: {
         tag: "Interior",
         title: "Cabin Detail",
-        photoReplace: "Interior — dashboard and console",
+        photoAlt: "Dodge interior with detailed dashboard and leather seats",
       },
       wheels: {
         tag: "Wheels",
         title: "Close Detail",
-        photoReplace: "Wheel and brake caliper detail",
+        photoAlt: "Jeep Summit leather seat with diamond stitching",
       },
       protection: {
         tag: "Protection",
         title: "Finish",
-        photoReplace: "Water beading on paint",
+        photoAlt: "Audi interior with clean leather and console finish",
       },
     },
   },
   testimonial: {
     quote:
-      "Add a client testimonial here — one sentence that captures the experience of working with the studio.",
-    cite: "— Client Name, Vehicle (placeholder)",
+      "My truck looked better than the day I bought it. Christian took his time on every surface inside and out — you can tell this is done by someone who actually cares.",
+    cite: "— David K., GMC Sierra Owner",
   },
   about: {
     eyebrow: "Owner / President",
@@ -101,7 +111,7 @@ export const en: Dictionary = {
     paragraph1:
       "Luxe Auto Detailings is owned and operated by Christian Sommer. Every vehicle that comes through the studio — or gets picked up on the road — gets the same standard of care, start to finish.",
     paragraph2: "No shortcuts, no rushed jobs. Just detailing done properly.",
-    photoReplace: "Portrait — Christian Sommer",
+    photoAlt: "GMC Denali interior with leather seats and wood trim",
   },
   contact: {
     eyebrow: "Get In Touch",
@@ -111,10 +121,6 @@ export const en: Dictionary = {
     email: "Email",
     address: "Address",
     serviceArea: "Service Area",
-    placeholderHours: "Add opening hours",
-    placeholderEmail: "Add email address",
-    placeholderAddress: "Add studio address",
-    placeholderServiceArea: "Add mobile service area",
   },
   booking: {
     title: "Ready when\nyou are.",
@@ -122,7 +128,7 @@ export const en: Dictionary = {
       "Book your detail, or call the studio directly — mobile and dropoff options both available.",
     bookDetail: "Book Your Detail",
     callCta: "Call 419-206-8477",
-    photoReplace: "Cinematic — vehicle in low studio light",
+    photoAlt: "Jeep interior with detailed dashboard and steering wheel",
   },
   footer: {
     description:
@@ -132,7 +138,6 @@ export const en: Dictionary = {
     serviceMobile: "Mobile / Dropoff",
     studioHeading: "Studio",
     contactHeading: "Contact",
-    placeholderEmail: "Add email address",
     copyright: "© 2026 Luxe Auto Detailings. All rights reserved.",
     tagline: "Interior / Exterior Detail — Mobile / Dropoff",
   },

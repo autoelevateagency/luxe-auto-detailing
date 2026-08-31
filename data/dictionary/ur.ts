@@ -9,9 +9,19 @@ export const ur: Dictionary = {
   common: {
     phone: "4192068477",
     phoneDisplay: "419-206-8477",
+    email: "info@luxautodetailings.com",
     ownerName: "Christian Sommer",
     ownerRole: "مالک / صدر، Luxe Auto Detailings",
     companyName: "Luxe Auto Detailings",
+    hoursWeekday: "پیر–جمعہ: صبح 8:00 – شام 6:00",
+    hoursSaturday: "ہفتہ: صبح 9:00 – شام 4:00",
+    hoursSunday: "اتوار: صرف اپائنٹمنٹ پر",
+    addressLine1: "101 Front Street",
+    addressLine2: "Perrysburg, OH 43551",
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=101+Front+Street+Perrysburg+OH+43551",
+    serviceArea:
+      "شمال مغربی اوہائیو — Toledo، Bowling Green، Perrysburg، Sylvania، Maumee، Findlay اور 40 میل کے ارد گرد",
   },
   nav: {
     logoAriaLabel: "Luxe Auto Detailings ہوم",
@@ -36,7 +46,7 @@ export const ur: Dictionary = {
     availableLabel: "دستیاب",
     availableValue: "موبائل اور ڈراپ آف",
     callLabel: "کال",
-    photoReplace: "ہیرو — سیاہ گاڑی، کم اسٹوڈیو روشنی",
+    photoAlt: "ہیرو — سیاہ گاڑی، کم اسٹوڈیو روشنی",
   },
   services: {
     eyebrow: "ہم کیا کرتے ہیں",
@@ -50,7 +60,7 @@ export const ur: Dictionary = {
       description:
         "مکمل ڈیٹیل، اندر اور باہر — چمڑا، کارپٹ، اور شیشہ بہترین حالت میں، پینٹ صاف، درست اور محفوظ، سب ہاتھ سے۔",
       cta: "یہ سروس بک کریں",
-      photoReplace: "اندرونی — چمڑے کی سیٹ کی تفصیل",
+      photoAlt: "GMC ٹرک کا اندرونی حصہ، تفصیلی چمڑے کی سیٹیں",
     },
     service2: {
       num: "02",
@@ -59,41 +69,41 @@ export const ur: Dictionary = {
       description:
         "اسٹوڈیو آپ کے پاس آئے، یا گاڑی لائیں — ہر صورت میں وہی عمل، وہی توجہ، وہی نتیجہ۔",
       cta: "شیڈولنگ کے بارے میں پوچھیں",
-      photoReplace: "موبائل سیٹ اپ کسٹمر کے مقام پر",
+      photoAlt: "کسٹمر کے گھر پر موبائل ڈیٹیلنگ",
     },
   },
   showcase: {
     eyebrow: "کام",
     title: "فنش سے\nفیصلہ کریں۔",
     description:
-      "اسٹوڈیو کے عمل کی جhalak — ان placeholders کو اپنی اصل ڈیٹیلنگ فوٹوگرافی سے بدلیں۔",
+      "اسٹوڈیو کے حقیقی نتائج — اندرونی، بیرونی، اور ہر تفصیل۔",
     items: {
       exterior: {
         tag: "بیرونی",
         title: "پینٹ اور باڈی",
-        photoReplace: "بیرونی — پینٹ کی عکاسی، مکمل باڈی",
+        photoAlt: "چاندی Jeep Grand Cherokee کی بیرونی دھلائی",
       },
       interior: {
         tag: "اندرونی",
         title: "کیبن ڈیٹیل",
-        photoReplace: "اندرونی — ڈیش بورڈ اور کنسول",
+        photoAlt: "Dodge کا اندرونی حصہ، تفصیلی ڈیش بورڈ اور چمڑے کی سیٹیں",
       },
       wheels: {
         tag: "پہiye",
         title: "قریبی تفصیل",
-        photoReplace: "پہiye اور بریک کیliper کی تفصیل",
+        photoAlt: "Jeep Summit چمڑے کی سیٹ، ڈائمنڈ سلائی",
       },
       protection: {
         tag: "تحفظ",
         title: "فنش",
-        photoReplace: "پینٹ پر پani کے قطرے",
+        photoAlt: "Audi کا اندرونی حصہ، صاف چمڑا اور کنسول",
       },
     },
   },
   testimonial: {
     quote:
-      "یہاں کلائنٹ کی تعریف شامل کریں — ایک جملہ جو اسٹوڈیو کے ساتھ کام کا تجربہ بیان کرے۔",
-    cite: "— کلائنٹ کا نام، گاڑی (placeholder)",
+      "میری ٹرک خریدنے کے دن سے بھی بہتر لگ رہی تھی۔ Christian نے اندر اور باہر ہر سطح پر وقت دیا — واضح ہے کہ یہ کسی ایسے شخص نے کیا ہے جو واقعی پرواہ کرتا ہے۔",
+    cite: "— David K.، GMC Sierra Owner",
   },
   about: {
     eyebrow: "مالک / صدر",
@@ -101,7 +111,7 @@ export const ur: Dictionary = {
     paragraph1:
       "Luxe Auto Detailings Christian Sommer کے زیرِ انتظام ہے۔ ہر گاڑی — چاہے اسٹوڈیو میں ہو یا سڑک پر — یکساں معیار کی دیکhbhal پاتی ہے۔",
     paragraph2: "کوئی shortcuts نہیں، کوئی جلدی نہیں۔ صرف صحیح ڈیٹیلنگ۔",
-    photoReplace: "پورٹریٹ — Christian Sommer",
+    photoAlt: "GMC Denali کا اندرونی حصہ، چمڑے کی سیٹیں اور لکڑی کی trim",
   },
   contact: {
     eyebrow: "رابطہ کریں",
@@ -111,10 +121,6 @@ export const ur: Dictionary = {
     email: "ای میل",
     address: "پتہ",
     serviceArea: "سروس ایریا",
-    placeholderHours: "کھلنے کے اوقات شامل کریں",
-    placeholderEmail: "ای میل شامل کریں",
-    placeholderAddress: "اسٹوڈیو کا پتہ شامل کریں",
-    placeholderServiceArea: "موبائل سروس ایریا شامل کریں",
   },
   booking: {
     title: "جب آپ تیار ہوں\nہم بھی تیار ہیں۔",
@@ -122,7 +128,7 @@ export const ur: Dictionary = {
       "اپنی ڈیٹیل بک کریں، یا اسٹوڈیو کو براہِ راست کال کریں — موبائل اور ڈراپ آف دونوں دستیاب۔",
     bookDetail: "اپنی ڈیٹیل بک کریں",
     callCta: "419-206-8477 پر کال کریں",
-    photoReplace: "سینمائی — کم روشنی میں گاڑی",
+    photoAlt: "Jeep کا اندرونی حصہ، تفصیلی ڈیش بورڈ اور سٹیئرنگ وہیل",
   },
   footer: {
     description:
@@ -132,7 +138,6 @@ export const ur: Dictionary = {
     serviceMobile: "موبائل / ڈراپ آف",
     studioHeading: "اسٹوڈیو",
     contactHeading: "رابطہ",
-    placeholderEmail: "ای میل شامل کریں",
     copyright: "© 2026 Luxe Auto Detailings۔ تمام حقوق محفوظ ہیں۔",
     tagline: "اندرونی / بیرونی ڈیٹیل — موبائل / ڈراپ آف",
   },
