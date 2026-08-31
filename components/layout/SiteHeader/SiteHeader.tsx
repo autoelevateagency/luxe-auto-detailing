@@ -13,6 +13,14 @@ export const SiteHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
+  useEffect(() => {
     const header = headerRef.current;
 
     if (!header) {
@@ -60,7 +68,11 @@ export const SiteHeader = () => {
           <a href="#contact" onClick={closeMenu}>
             {nav.contact}
           </a>
-          <a href="#booking" className="btn btn-primary" onClick={closeMenu}>
+          <a
+            href={`tel:${common.phone}`}
+            className="btn btn-primary"
+            onClick={closeMenu}
+          >
             {nav.bookNow}
           </a>
         </nav>

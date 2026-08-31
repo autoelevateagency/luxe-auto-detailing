@@ -14,7 +14,7 @@ export const Contact = () => {
         <Reveal>
           <div className="contact-primary">
             <span className="eyebrow">{contact.eyebrow}</span>
-            <h2 style={{ marginTop: 14 }}>{contact.title}</h2>
+            <h2>{contact.title}</h2>
             <a href={`tel:${common.phone}`} className="contact-phone">
               {common.phoneDisplay}
             </a>

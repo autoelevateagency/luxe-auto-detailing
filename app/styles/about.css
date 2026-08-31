@@ -11,6 +11,11 @@
 
 .about-photo {
   aspect-ratio: 3 / 4;
+  min-width: 0;
+}
+
+.about-copy {
+  min-width: 0;
 }
 
 .about-copy .eyebrow {
@@ -57,7 +62,11 @@
   color: var(--gray);
 }
 
-@media (max-width: 900px) {
+@media (min-width: 641px) and (max-width: 900px) {
+  .about {
+    padding: 100px 0;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -65,5 +74,28 @@
 
   .about-photo {
     aspect-ratio: 16 / 10;
+  }
+
+  .about-copy p {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 80px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-photo {
+    aspect-ratio: 16 / 10;
+  }
+
+  .about-copy p {
+    max-width: none;
   }
 }

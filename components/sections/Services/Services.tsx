@@ -8,7 +8,7 @@ import { GALLERY_IMAGES } from "@/data/gallery-images";
 
 export const Services = () => {
   const { dictionary } = useLanguage();
-  const { services } = dictionary;
+  const { services, common } = dictionary;
 
   return (
     <section className="services" id="services">
@@ -30,7 +30,7 @@ export const Services = () => {
               <span className="eyebrow">{services.service1.eyebrow}</span>
               <h3>{services.service1.title}</h3>
               <p>{services.service1.description}</p>
-              <a href="#booking" className="btn btn-line">
+              <a href={`tel:${common.phone}`} className="btn btn-line">
                 {services.service1.cta}
               </a>
             </div>
@@ -53,7 +53,7 @@ export const Services = () => {
               <span className="eyebrow">{services.service2.eyebrow}</span>
               <h3>{services.service2.title}</h3>
               <p>{services.service2.description}</p>
-              <a href="#contact" className="btn btn-line">
+              <a href={`tel:${common.phone}`} className="btn btn-line">
                 {services.service2.cta}
               </a>
             </div>

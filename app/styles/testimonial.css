@@ -32,10 +32,27 @@
 
 .testimonial-mark {
   font-family: var(--display);
-  font-size: 64px;
+  font-size: clamp(48px, 10vw, 64px);
   color: var(--purple);
   opacity: 0.7;
   line-height: 1;
   margin-bottom: 8px;
   display: block;
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .testimonial {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonial {
+    padding: 80px 0;
+  }
+
+  .testimonial cite {
+    margin-top: 24px;
+    font-size: 12px;
+  }
 }

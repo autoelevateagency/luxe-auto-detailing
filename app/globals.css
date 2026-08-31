@@ -21,6 +21,7 @@
 
   --max: 1400px;
   --gutter: clamp(24px, 5vw, 96px);
+  --nav-height: 92px;
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -234,6 +235,38 @@ svg {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .section-head {
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+
+  .section-head p {
+    max-width: none;
+  }
+
+  .btn {
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn-line {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links .btn,
+  .booking-actions .btn {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
