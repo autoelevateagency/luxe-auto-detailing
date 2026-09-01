@@ -3,6 +3,7 @@
   width: 100%;
   height: clamp(240px, 70vh, 720px);
   overflow: hidden;
+  margin: 0;
 }
 
 .hero-video {

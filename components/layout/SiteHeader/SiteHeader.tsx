@@ -12,12 +12,22 @@ export const SiteHeader = () => {
   const headerRef = useRef<HTMLElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const navLinksRef = useRef<HTMLElement>(null);
+
   useEffect(() => {
+    document.documentElement.classList.toggle("menu-open", menuOpen);
     document.body.style.overflow = menuOpen ? "hidden" : "";
 
     return () => {
+      document.documentElement.classList.remove("menu-open");
       document.body.style.overflow = "";
     };
+  }, [menuOpen]);
+
+  useEffect(() => {
+    if (menuOpen) {
+      navLinksRef.current?.scrollTo(0, 0);
+    }
   }, [menuOpen]);
 
   useEffect(() => {
@@ -48,10 +58,15 @@ export const SiteHeader = () => {
   }, []);
 
   return (
-    <header id="siteHeader" ref={headerRef}>
+    <header
+      id="siteHeader"
+      ref={headerRef}
+      className={menuOpen ? "menu-open" : undefined}
+    >
       <Wrap className="nav">
         <Logo ariaLabel={nav.logoAriaLabel} />
         <nav
+          ref={navLinksRef}
           className={`nav-links${menuOpen ? " open" : ""}`}
           id="navLinks"
           aria-label="Primary"
@@ -82,7 +97,7 @@ export const SiteHeader = () => {
           </a>
           <button
             type="button"
-            className="menu-btn"
+            className={`menu-btn${menuOpen ? " open" : ""}`}
             id="menuBtn"
             aria-label={nav.menuToggle}
             aria-expanded={menuOpen}
